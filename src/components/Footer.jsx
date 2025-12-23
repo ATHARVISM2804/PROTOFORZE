@@ -10,7 +10,8 @@ const Footer = () => {
           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
         </svg>
       ), 
-      url: 'https://instagram.com/ecell_nith' 
+      url: 'https://instagram.com/ecell_nith',
+      color: 'hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500'
     },
     { 
       name: 'LinkedIn', 
@@ -19,16 +20,18 @@ const Footer = () => {
           <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
         </svg>
       ), 
-      url: 'https://linkedin.com/company/ecell-nith' 
+      url: 'https://www.linkedin.com/company/entrepreneurshipcellnith/posts/?feedView=all',
+      color: 'hover:bg-blue-600'
     },
     { 
-      name: 'Twitter', 
+      name: 'Email', 
       icon: (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
         </svg>
       ), 
-      url: 'https://twitter.com/ecell_nith' 
+      url: 'mailto:ecell@nith.ac.in',
+      color: 'hover:bg-red-500'
     },
     { 
       name: 'Facebook', 
@@ -37,16 +40,23 @@ const Footer = () => {
           <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
         </svg>
       ), 
-      url: 'https://facebook.com/ecellnith' 
+      url: 'https://facebook.com/ecellnith',
+      color: 'hover:bg-blue-700'
     },
   ];
 
   const quickLinks = [
     { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
     { name: 'Timeline', href: '#timeline' },
     { name: 'Instructions', href: '#instructions' },
-    { name: 'Apply', href: '#apply' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Apply Now', href: '#apply' },
+  ];
+
+  const contactInfo = [
+    { icon: '📧', label: 'Email', value: 'ecell@nith.ac.in', href: 'mailto:ecell@nith.ac.in' },
+    { icon: '📍', label: 'Location', value: 'NIT Hamirpur, HP - 177005', href: null },
+    { icon: '🌐', label: 'Website', value: 'ecell.nith.ac.in', href: 'https://ecell.nith.ac.in' },
   ];
 
   const containerVariants = {
@@ -72,47 +82,53 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-proto-black border-t border-proto-border relative overflow-hidden">
-      {/* Subtle background gradient */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-gradient-to-t from-purple-500/5 to-transparent blur-3xl pointer-events-none" />
+    <footer className="bg-gradient-to-b from-proto-black to-black border-t border-proto-border/50 relative overflow-hidden">
+      {/* Background decorations */}
+      <div className="absolute inset-0 bg-grid opacity-5 pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
       
-      <div className="container mx-auto px-4 py-12 md:py-16 relative z-10">
+      {/* Main Footer Content */}
+      <div className="container mx-auto px-4 py-16 md:py-20 relative z-10">
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8"
         >
-          {/* Brand */}
-          <motion.div variants={itemVariants}>
-            <motion.img
-              src="https://res.cloudinary.com/dmhabztbf/image/upload/v1766387608/ecell_xgdpga_zvla1y.webp"
-              alt="E-Cell NIT Hamirpur"
-              className="h-14 w-auto object-contain mb-4"
-              whileHover={{ scale: 1.05 }}
-            />
-            <motion.h3 
-              className="font-heading text-2xl font-bold text-proto-text mb-4"
-              whileHover={{ x: 3 }}
-            >
-              E-CELL NIT HAMIRPUR
-            </motion.h3>
+          {/* Brand Section */}
+          <motion.div variants={itemVariants} className="lg:col-span-1">
+            <div className="flex items-center gap-3 mb-6">
+              <motion.img
+                src="https://res.cloudinary.com/dmhabztbf/image/upload/v1766387608/ecell_xgdpga_zvla1y.webp"
+                alt="E-Cell NIT Hamirpur"
+                className="h-12 w-auto object-contain"
+                whileHover={{ scale: 1.05, rotate: 5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              />
+              <div>
+                <h3 className="font-heading text-lg font-bold text-proto-text leading-tight">
+                  E-CELL
+                </h3>
+                <span className="text-proto-subtle text-xs">NIT Hamirpur</span>
+              </div>
+            </div>
             <p className="text-proto-muted font-body text-sm leading-relaxed mb-6">
-              Empowering innovation and entrepreneurship at NIT Hamirpur. We foster a culture of
-              startup thinking and provide resources to turn ideas into reality.
+              Fostering entrepreneurship and innovation at NIT Hamirpur. Building tomorrow's leaders, today.
             </p>
+            
             {/* Social Links */}
-            <div className="flex gap-3">
+            <div className="flex gap-2">
               {socialLinks.map((social, index) => (
                 <motion.a
                   key={index}
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ y: -5, scale: 1.1 }}
+                  whileHover={{ y: -4, scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-11 h-11 bg-proto-card border border-proto-border rounded-xl flex items-center justify-center text-proto-muted hover:text-proto-text hover:bg-proto-surface hover:border-proto-subtle transition-all duration-300"
+                  className={`w-10 h-10 bg-proto-card/50 border border-proto-border/50 rounded-lg flex items-center justify-center text-proto-muted hover:text-white hover:border-transparent transition-all duration-300 ${social.color}`}
                   aria-label={social.name}
                 >
                   {social.icon}
@@ -122,25 +138,23 @@ const Footer = () => {
           </motion.div>
 
           {/* Quick Links */}
-          <motion.div
-            variants={itemVariants}
-            className="md:text-center"
-          >
-            <h4 className="font-heading text-lg font-bold text-proto-text mb-4 uppercase tracking-wider">
+          <motion.div variants={itemVariants}>
+            <h4 className="font-heading text-sm font-bold text-proto-text mb-6 uppercase tracking-widest flex items-center gap-2">
+              <span className="w-8 h-px bg-gradient-to-r from-purple-500 to-transparent"></span>
               Quick Links
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <motion.li 
                   key={index}
-                  whileHover={{ x: 5 }}
+                  whileHover={{ x: 6 }}
                   transition={{ duration: 0.2 }}
                 >
                   <a
                     href={link.href}
-                    className="text-proto-muted font-body hover:text-proto-text transition-colors inline-flex items-center gap-2 group"
+                    className="text-proto-muted font-body text-sm hover:text-proto-text transition-colors inline-flex items-center gap-2 group"
                   >
-                    <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-proto-border group-hover:bg-purple-500 transition-colors"></span>
                     {link.name}
                   </a>
                 </motion.li>
@@ -148,64 +162,104 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* Event Info */}
-          <motion.div
-            variants={itemVariants}
-            className="md:text-right"
-          >
-            <h4 className="font-heading text-lg font-bold text-proto-text mb-4 uppercase tracking-wider">
-              PROTOFORZE 2025
+          {/* Contact Info */}
+          <motion.div variants={itemVariants}>
+            <h4 className="font-heading text-sm font-bold text-proto-text mb-6 uppercase tracking-widest flex items-center gap-2">
+              <span className="w-8 h-px bg-gradient-to-r from-blue-500 to-transparent"></span>
+              Contact Us
             </h4>
-            <div className="text-proto-muted font-body text-sm space-y-2">
-              <motion.p whileHover={{ x: -3 }} className="flex items-center gap-2 md:justify-end">
-                <span>📅</span> 15th November, 2025
-              </motion.p>
-              <motion.p whileHover={{ x: -3 }} className="flex items-center gap-2 md:justify-end">
-                <span>⏰</span> 09:00 AM onwards
-              </motion.p>
-              <motion.p whileHover={{ x: -3 }} className="flex items-center gap-2 md:justify-end">
-                <span>📍</span> Mini Auditorium, NIT Hamirpur
-              </motion.p>
-              <motion.div 
-                className="mt-4 pt-4 border-t border-proto-border/50"
-                whileHover={{ scale: 1.02 }}
-              >
-                <span className="text-proto-text font-semibold">Funding up to</span>
-                <br />
-                <span className="font-heading text-2xl text-amber-400 font-bold">INR 2,00,000</span>
-              </motion.div>
+            <ul className="space-y-4">
+              {contactInfo.map((info, index) => (
+                <motion.li 
+                  key={index}
+                  whileHover={{ x: 4 }}
+                  className="flex items-start gap-3"
+                >
+                  <span className="text-lg">{info.icon}</span>
+                  <div>
+                    <span className="text-proto-subtle text-xs uppercase tracking-wider block mb-0.5">{info.label}</span>
+                    {info.href ? (
+                      <a href={info.href} target="_blank" rel="noopener noreferrer" className="text-proto-muted text-sm hover:text-proto-text transition-colors">
+                        {info.value}
+                      </a>
+                    ) : (
+                      <span className="text-proto-muted text-sm">{info.value}</span>
+                    )}
+                  </div>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Event Highlight */}
+          <motion.div variants={itemVariants}>
+            <h4 className="font-heading text-sm font-bold text-proto-text mb-6 uppercase tracking-widest flex items-center gap-2">
+              <span className="w-8 h-px bg-gradient-to-r from-amber-500 to-transparent"></span>
+              Event Details
+            </h4>
+            <div className="bg-gradient-to-br from-proto-card/80 to-proto-card/40 border border-proto-border/50 rounded-xl p-5 backdrop-blur-sm">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-2xl">🚀</span>
+                <span className="font-heading text-lg font-bold gradient-text">PROTOFORZE</span>
+              </div>
+              <div className="space-y-2 text-sm">
+                <p className="flex items-center gap-2 text-proto-muted">
+                  <span className="text-proto-subtle">📅</span> 15th November, 2025
+                </p>
+                <p className="flex items-center gap-2 text-proto-muted">
+                  <span className="text-proto-subtle">⏰</span> 09:00 AM onwards
+                </p>
+                <p className="flex items-center gap-2 text-proto-muted">
+                  <span className="text-proto-subtle">📍</span> Mini Auditorium
+                </p>
+              </div>
+              <div className="mt-4 pt-4 border-t border-proto-border/30">
+                <span className="text-proto-subtle text-xs uppercase tracking-wider">Prize Pool</span>
+                <p className="font-heading text-xl font-bold text-amber-400 mt-1">₹ 2,00,000</p>
+              </div>
             </div>
           </motion.div>
         </motion.div>
 
-        {/* Divider */}
+        {/* Divider with gradient */}
         <motion.div 
           initial={{ opacity: 0, scaleX: 0 }}
           whileInView={{ opacity: 1, scaleX: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="border-t border-proto-border pt-8"
+          className="mt-16 mb-8"
         >
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <motion.p 
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="text-proto-subtle font-body text-sm"
-            >
-              © 2025 E-Cell NIT Hamirpur. All rights reserved.
-            </motion.p>
-            <motion.p 
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-              className="text-proto-subtle font-body text-sm flex items-center gap-2"
-            >
-              Made with <motion.span animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 1, repeat: Infinity }}>🔥</motion.span> for innovators
-            </motion.p>
+          <div className="h-px bg-gradient-to-r from-transparent via-proto-border to-transparent"></div>
+        </motion.div>
+
+        {/* Bottom Bar */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+          className="flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p className="text-proto-subtle font-body text-sm">
+            © {new Date().getFullYear()} E-Cell NIT Hamirpur. All rights reserved.
+          </p>
+          
+          <div className="flex items-center gap-6">
+            <a href="#" className="text-proto-subtle text-sm hover:text-proto-muted transition-colors">Privacy Policy</a>
+            <a href="#" className="text-proto-subtle text-sm hover:text-proto-muted transition-colors">Terms of Service</a>
           </div>
+
+          <p className="text-proto-subtle font-body text-sm flex items-center gap-2">
+            Crafted with 
+            <motion.span 
+              animate={{ scale: [1, 1.3, 1] }} 
+              transition={{ duration: 1.5, repeat: Infinity }}
+              className="text-red-500"
+            >
+              ❤️
+            </motion.span> 
+            by E-Cell Team
+          </p>
         </motion.div>
       </div>
     </footer>

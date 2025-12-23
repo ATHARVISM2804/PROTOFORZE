@@ -75,7 +75,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-48 bg-gradient-to-b from-proto-black via-proto-black/80 to-transparent"></div>
       <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-proto-black via-proto-black/80 to-transparent"></div>
 
-      <div className="container mx-auto px-4 text-center relative z-10">
+      <div className="container mx-auto px-4 text-center relative z-10 pt-16">
         {/* Presented by badge */}
         <motion.div
           initial={{ opacity: 0, y: 20, scale: 0.9 }}

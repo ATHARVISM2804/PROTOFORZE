@@ -12,6 +12,8 @@ const Instructions = () => {
         'Individuals and teams (max 4 members) can participate',
         'Ideas from any domain are welcome',
         'Previous startup experience is not mandatory',
+        'Must have a valid college ID',
+        'Idea should not be already funded or commercialized',
       ],
     },
     {
@@ -23,6 +25,8 @@ const Instructions = () => {
         'Cross-department teams are encouraged',
         'Each member must register individually',
         'Team leader must be clearly designated',
+        'One person can be part of only one team',
+        'Team composition cannot be changed after registration',
       ],
     },
     {
@@ -34,6 +38,9 @@ const Instructions = () => {
         '5 minutes Q&A with judges',
         'Use of slides/prototypes encouraged',
         'Focus on problem, solution, and business model',
+        'Total funding required with clear breakup',
+        'Budget allocation: product dev, tech, marketing, operations',
+        'Expected outcomes/milestones from the funding',
       ],
     },
     {
@@ -45,6 +52,8 @@ const Instructions = () => {
         'Market potential and scalability',
         'Feasibility of execution',
         'Team capability and presentation skills',
+        'Social impact and sustainability',
+        'Revenue model and financial viability',
       ],
     },
   ];
