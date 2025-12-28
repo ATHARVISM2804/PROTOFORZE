@@ -203,19 +203,14 @@ const Footer = () => {
                 <span className="font-heading text-lg font-bold gradient-text">PROTOFORZE</span>
               </div>
               <div className="space-y-2 text-sm">
-                <p className="flex items-center gap-2 text-proto-muted">
-                  <span className="text-proto-subtle">📅</span> 15th November, 2025
-                </p>
-                <p className="flex items-center gap-2 text-proto-muted">
-                  <span className="text-proto-subtle">⏰</span> 09:00 AM onwards
-                </p>
+                
                 <p className="flex items-center gap-2 text-proto-muted">
                   <span className="text-proto-subtle">📍</span> Mini Auditorium
                 </p>
               </div>
               <div className="mt-4 pt-4 border-t border-proto-border/30">
                 <span className="text-proto-subtle text-xs uppercase tracking-wider">Prize Pool</span>
-                <p className="font-heading text-xl font-bold text-amber-400 mt-1">₹ 2,00,000</p>
+                <p className="font-heading text-xl font-bold text-amber-400 mt-1">₹ 25,000</p>
               </div>
             </div>
           </motion.div>
@@ -238,18 +233,13 @@ const Footer = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="flex flex-col md:flex-row justify-between items-center gap-4"
+          className="flex flex-col items-center justify-center gap-2 text-center"
         >
           <p className="text-proto-subtle font-body text-sm">
             © {new Date().getFullYear()} E-Cell NIT Hamirpur. All rights reserved.
           </p>
-          
-          <div className="flex items-center gap-6">
-            <a href="#" className="text-proto-subtle text-sm hover:text-proto-muted transition-colors">Privacy Policy</a>
-            <a href="#" className="text-proto-subtle text-sm hover:text-proto-muted transition-colors">Terms of Service</a>
-          </div>
 
-          <p className="text-proto-subtle font-body text-sm flex items-center gap-2">
+          <p className="text-proto-subtle font-body text-sm flex items-center gap-2 justify-center">
             Crafted with 
             <motion.span 
               animate={{ scale: [1, 1.3, 1] }} 

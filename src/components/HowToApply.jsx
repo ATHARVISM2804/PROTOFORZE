@@ -196,7 +196,7 @@ const HowToApply = () => {
             transition={{ delay: 0.6 }}
             className="text-proto-subtle text-sm mt-4 font-body flex items-center justify-center gap-2"
           >
-            <span>⏰</span> Registration closes on 14th November, 2025
+            <span>⏰</span> Registration closes on 10th January, 2026
           </motion.p>
         </motion.div>
       </div>

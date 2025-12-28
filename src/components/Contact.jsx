@@ -11,13 +11,13 @@ const Contact = () => {
 
   const contacts = [
     {
-      name: 'Ujjwal',
-      phone: '88825-41097',
+      name: 'Atharv',
+      phone: '83293-10930',
       icon: '👤',
     },
     {
-      name: 'Riya',
-      phone: '88607-59499',
+      name: 'Kanish',
+      phone: '62302-29689',
       icon: '👤',
     },
   ];

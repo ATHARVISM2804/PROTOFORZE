@@ -162,13 +162,13 @@ const Hero = () => {
             </p>
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold">
               <span className="text-proto-text">INR </span>
-              <span className="text-amber-400">2,00,000</span>
+              <span className="text-amber-400">25,000</span>
             </h2>
           </div>
         </motion.div>
 
         {/* Event Details Cards */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
@@ -196,7 +196,7 @@ const Hero = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> */}
 
         {/* CTA Buttons with enhanced styling */}
         <motion.div

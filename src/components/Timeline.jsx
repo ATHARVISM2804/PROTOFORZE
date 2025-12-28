@@ -29,8 +29,20 @@ const Timeline = () => {
     },
     {
       step: '05',
-      title: 'Funding Announcement',
-      description: 'Winners receive funding up to INR 2,00,000 to kickstart their startup journey.',
+      title: 'Hardware Allocation',
+      description: 'Participating teams are provided with necessary hardware resources to develop their prototypes.',
+      icon: '💡',
+    },
+    {
+      step: '06',
+      title: 'Project Showcase',
+      description: 'Teams present their developed prototypes to a panel of judges and attendees.',
+      icon: '💻',
+    },
+    {
+      step: '07',
+      title: 'Results Announcement',
+      description: 'Final results are announced and prize pool is distributed to winning teams.',
       icon: '🏆',
     },
   ];
