@@ -17,7 +17,7 @@ const Contact = () => {
     },
     {
       name: 'Kanish',
-      phone: '62302-29689',
+      phone: '62302-29689 ',
       icon: '👤',
     },
   ];

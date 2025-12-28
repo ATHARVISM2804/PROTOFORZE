@@ -51,6 +51,7 @@ const Footer = () => {
     { name: 'Timeline', href: '#timeline' },
     { name: 'Instructions', href: '#instructions' },
     { name: 'Apply Now', href: '#apply' },
+    { name: 'T&C', href: '#terms' },
   ];
 
   const contactInfo = [
@@ -209,7 +210,7 @@ const Footer = () => {
                 </p>
               </div>
               <div className="mt-4 pt-4 border-t border-proto-border/30">
-                <span className="text-proto-subtle text-xs uppercase tracking-wider">Prize Pool</span>
+                <span className="text-proto-subtle text-xs uppercase tracking-wider">Funding Upto</span>
                 <p className="font-heading text-xl font-bold text-amber-400 mt-1">₹ 25,000</p>
               </div>
             </div>
