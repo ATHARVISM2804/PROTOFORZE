@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import termsPdf from '../assets/Protoforze.pdf';
 
 const Footer = () => {
   const socialLinks = [
@@ -51,7 +52,7 @@ const Footer = () => {
     { name: 'Timeline', href: '#timeline' },
     { name: 'Instructions', href: '#instructions' },
     { name: 'Apply Now', href: '#apply' },
-    { name: 'T&C', href: '#terms' },
+    { name: 'T&C', href: termsPdf },
   ];
 
   const contactInfo = [
@@ -154,6 +155,8 @@ const Footer = () => {
                   <a
                     href={link.href}
                     className="text-proto-muted font-body text-sm hover:text-proto-text transition-colors inline-flex items-center gap-2 group"
+                    target={link.href && !String(link.href).startsWith('#') ? '_blank' : undefined}
+                    rel={link.href && !String(link.href).startsWith('#') ? 'noopener noreferrer' : undefined}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-proto-border group-hover:bg-purple-500 transition-colors"></span>
                     {link.name}
