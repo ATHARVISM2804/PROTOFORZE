@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+
 const Instructions = () => {
   const instructionCards = [
     {
@@ -9,7 +10,7 @@ const Instructions = () => {
       color: 'from-green-500/10 to-emerald-500/5',
       items: [
         'Open to all students of NIT Hamirpur',
-        'Individuals and teams (max 4 members) can participate',
+        'Individuals and teams (max 6 members) can participate',
         'Ideas from any domain are welcome',
         'Previous startup experience is not mandatory',
         'Must have a valid college ID',
@@ -21,7 +22,7 @@ const Instructions = () => {
       icon: '👥',
       color: 'from-blue-500/10 to-cyan-500/5',
       items: [
-        'Minimum 1, Maximum 4 members per team',
+        'Minimum 3 and maximum 6 members (minimum 1 female member mandatory)',
         'Cross-department teams are encouraged',
         'Each member must register individually',
         'Team leader must be clearly designated',
@@ -197,6 +198,8 @@ const Instructions = () => {
             </motion.div>
           ))}
         </motion.div>
+      
+
       </div>
     </section>
   );

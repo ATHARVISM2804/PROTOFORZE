@@ -7,36 +7,42 @@ const Timeline = () => {
       step: '01',
       title: 'Registrations Open',
       description: 'Submit your team details and initial idea through the registration portal.',
+      date: '1 Jan',
       icon: '📝',
     },
     {
       step: '02',
       title: 'Pitching Round',
       description: 'Selected teams present their ideas to the jury in a live pitching session.',
+      date: '19–20 Jan',
       icon: '🎤',
     },
     {
-      step: '03',
-      title: 'Final Evaluation',
-      description: 'Top pitches are evaluated based on execution plan, scalability, and impact.',
-      icon: '📊',
+     step: '03',
+      title: 'Hardware Allocation',
+      description: 'Participating teams are provided with necessary hardware resources to develop their prototypes.',
+      date: '26 Jan',
+      icon: '💡',
     },
     {
       step: '04',
-      title: 'Hardware Allocation',
-      description: 'Participating teams are provided with necessary hardware resources to develop their prototypes.',
-      icon: '💡',
+      title: 'Final Evaluation',
+      description: 'Top pitches are evaluated based on execution plan, scalability, and impact.',
+      date: '30 Jan – 1 Feb',
+      icon: '📊',
     },
     {
       step: '05',
       title: 'Project Showcase',
       description: 'Teams present their developed prototypes to a panel of judges and attendees.',
+      date: '30 Jan – 1 Feb',
       icon: '💻',
     },
     {
       step: '06',
       title: 'Results Announcement',
       description: 'Final results are announced and prize pool is distributed to winning teams.',
+      date: '1 Feb',
       icon: '🏆',
     },
   ];
@@ -179,6 +185,9 @@ const Timeline = () => {
                 <h3 className="font-heading text-xl md:text-2xl font-bold text-proto-text mb-2 group-hover:text-white transition-colors">
                   {item.title}
                 </h3>
+                {item.date && (
+                  <div className="text-proto-subtle text-sm mb-2">{item.date}</div>
+                )}
                 <p className="text-proto-muted font-body leading-relaxed">
                   {item.description}
                 </p>
