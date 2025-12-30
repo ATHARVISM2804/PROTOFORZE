@@ -26,17 +26,17 @@ const Timeline = () => {
     },
     {
       step: '04',
-      title: 'Final Evaluation',
-      description: 'Top pitches are evaluated based on execution plan, scalability, and impact.',
-      date: '30 Jan – 1 Feb',
-      icon: '📊',
-    },
-    {
-      step: '05',
       title: 'Project Showcase',
       description: 'Teams present their developed prototypes to a panel of judges and attendees.',
       date: '30 Jan – 1 Feb',
       icon: '💻',
+    },
+    {
+      step: '05',
+      title: 'Final Evaluation',
+      description: 'Top pitches are evaluated based on execution plan, scalability, and impact.',
+      date: '30 Jan – 1 Feb',
+      icon: '📊',
     },
     {
       step: '06',
