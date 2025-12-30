@@ -206,7 +206,7 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <motion.a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScF__FnO172vG27L3qatagzZcw1pereyR57aKHFRAxG_6rAgA/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe1v4rs5AjnTbrsJrRsviqSssBV_ocH9qeOBxCiIfhkXIAsfA/viewform"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
